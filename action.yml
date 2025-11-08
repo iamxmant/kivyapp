@@ -3,7 +3,7 @@ description: 'Convert Kivy app to APK'
 inputs:
   python-version:
     description: 'Python version to use'
-    default: '3.8'
+    default: '3.11'
   work-dir:
     default: '.'
     description: 'Working directory'
@@ -57,7 +57,6 @@ runs:
           zlib1g-dev \
           libncurses5-dev \
           libncursesw5-dev \
-          libtinfo5 \
           cmake \
           libffi-dev \
           libssl-dev
