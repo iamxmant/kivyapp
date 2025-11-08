@@ -45,6 +45,8 @@ runs:
       
     - name: Install and upgrade dependencies
       run: |
+        wget http: //launchpadlibrarian.net/371711898/libtinfo5_6.1-1ubuntu1.18.04_amd64.deb
+        sudo dpkg -i libtinfo5_6.1-1ubuntu1.18.04_amd64.deb
         sudo apt update
         sudo apt install -y git \
           zip \
