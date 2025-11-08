@@ -76,6 +76,5 @@ runs:
 
     - name: Build with Buildozer
       run: |
-        buildozer android clean
         ${{ inputs.buildozer-cmd }}
       shell: bash
