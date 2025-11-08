@@ -58,6 +58,7 @@ runs:
           libncurses5-dev \
           libncursesw5-dev \
           cmake \
+          libffi \
           libffi-dev \
           libssl-dev
         export PATH=$PATH:~/.local/bin/
