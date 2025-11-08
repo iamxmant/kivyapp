@@ -63,6 +63,7 @@ runs:
         export PATH=$PATH:~/.local/bin/
         python3 -m pip install --upgrade \
           Cython==0.29.33 \
+          setuptools \
           buildozer
       shell: bash
 
