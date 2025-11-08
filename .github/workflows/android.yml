@@ -20,8 +20,10 @@ jobs:
 
       - name: Install system deps
         run: |
+          sudo add-apt-repository universe
           sudo apt-get update
           sudo apt-get upgrade
+          sudo add-apt-repository universe
           sudo apt-get install -y python3-pip build-essential ccache git \
                zlib1g-dev python3-dev libncurses6 libstdc++6 \
                zlib1g openjdk-17-jdk unzip ant ccache autoconf libtool
