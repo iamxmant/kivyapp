@@ -20,11 +20,10 @@ jobs:
 
       - name: Install system deps
         run: |
-          sudo dpkg --add-architecture i386
           sudo apt-get update
           sudo apt-get install -y python3-pip build-essential ccache git \
-               zlib1g-dev python3-dev libncurses5:i386 libstdc++6:i386 \
-               zlib1g:i386 openjdk-17-jdk unzip ant ccache autoconf libtool
+               zlib1g-dev python3-dev libncurses5 libstdc++6 \
+               zlib1g openjdk-17-jdk unzip ant ccache autoconf libtool
 
       - name: Build APK
         uses: digreatbrian/buildozer-action@v2
